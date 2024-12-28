@@ -1,0 +1,475 @@
+@use "colors";
+@use "buttons";
+@use "fonts";
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1,
+h2,
+a {
+  font-family: fonts.$Rubik;
+}
+
+p,
+span,
+h3,
+h4 {
+  font-family: fonts.$Roboto;
+}
+
+.navbar {
+  padding: 15px;
+  background: colors.$Gradient_Right_BlueNavyPurple;
+  box-shadow: 0px 0px 5px 0.5px black;
+}
+
+.landing-page {
+  background-image: url("../images/city-5848267_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 40px;
+  padding-bottom: 120px;
+  color: white;
+  h1 {
+    color: colors.$NeonPink;
+    font-weight: 400;
+  }
+  .button-purple {
+    width: 150px;
+    padding: 12px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      max-width: 100%;
+      margin: 20px;
+    }
+  }
+  h1,
+  h4,
+  .container,
+  button {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.subscriptions-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: colors.$Gradient_Down_BluePurple;
+  padding: 20px;
+  padding-bottom: 100px;
+  color: white;
+  h2 {
+    font-weight: 500;
+  }
+  .subscriptions-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    .subscription-item {
+      background: colors.$Gradient_Down_NavyDark;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 0px 0px 15px 0.5px rgba(0, 0, 0, 0.502);
+      .button-purple {
+        width: 100px;
+      }
+      ul {
+        margin-top: 20px;
+        margin-left: -20px;
+        list-style: none;
+        i {
+          color: colors.$NeonPink;
+        }
+      }
+    }
+  }
+}
+
+.price-tag {
+  font-size: 46px;
+  font-weight: 500;
+  text-align: center;
+  color: colors.$NeonBlue;
+}
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: colors.$Gradient_Down_PurplePink;
+  color: white;
+  .container-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    button {
+      width: 120px;
+    }
+    .card {
+      background: linear-gradient(to bottom, blue, darkblue);
+      box-shadow: 0px 0px 10px 1px black;
+      color: white;
+    }
+    .card-price-text {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  }
+}
+
+.why-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: colors.$Gradient_Down_PurpleDarkPurple;
+  padding: 20px;
+  color: white;
+  padding-bottom: 100px;
+  h2 {
+    font-weight: 500;
+    text-align: center;
+  }
+  .why-us-item-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+}
+
+.advertisement {
+  background-image: url("../images/streaming-9009377_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-bottom: 100px;
+  color: white;
+  h1 {
+    font-weight: 400;
+  }
+  ul {
+    font-size: x-large;
+    list-style: none;
+  }
+  i {
+    color: colors.$NeonPink;
+  }
+  .ad-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  button {
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: colors.$CoalBlack;
+  color: gray;
+  ul {
+    list-style: none;
+    i {
+      font-size: xx-large;
+    }
+  }
+}
+
+.checkout {
+  padding: 20px;
+  padding-bottom: 50px;
+  color: white;
+  background: colors.$Gradient_Down_PurplePink;
+  .checkout-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    .checkout-details {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          margin-top: 20px;
+          width: 100%;
+          font-size: larger;
+        }
+        .container-plan {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          width: 100%;
+          justify-content: space-between;
+          .price-tag {
+            font-weight: bold;
+            color: navy;
+          }
+          .plan-tag {
+            display: flex;
+            font-weight: bold;
+            flex-direction: column;
+            margin-top: 10px;
+            font-size: larger;
+          }
+        }
+      }
+      .container-payments {
+        padding: 20px;
+        margin-top: 40px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+      }
+    }
+    .product-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .product-tag {
+        font-size: xx-large;
+      }
+      .price-tag {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.faq {
+  padding: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: colors.$Gradient_Down_NavyDark;
+  h2 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .container-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .question-item {
+      align-items: center;
+      padding: 15px;
+      border: 1px solid colors.$DarkPurple;
+      width: 100%;
+      text-decoration: none;
+      color: colors.$NeonBlue;
+    }
+  }
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  padding-bottom: 100px;
+  background: colors.$Gradient_Down_PurpleDarkPurple;
+  h2 {
+    font-weight: 500;
+  }
+  .feedback-header {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  .landing-page {
+    .container {
+      img {
+        width: 128px;
+      }
+      form {
+        margin-top: 50px;
+      }
+    }
+  }
+  .subscriptions-home {
+    .subscriptions-container {
+      flex-direction: column;
+    }
+    .subscription-item {
+      width: 300px;
+      height: 500px;
+    }
+  }
+  .why-us-item-container {
+    flex-direction: column;
+  }
+  .ad-container {
+    flex-direction: column;
+    gap: 20px;
+    button {
+      align-self: start;
+    }
+  }
+  .checkout-container {
+    flex-direction: column;
+    .container-payments {
+      width: 100%;
+    }
+  }
+  .container-questions {
+    width: 400px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  .landing-page {
+    .container {
+      img {
+        width: 200px;
+      }
+      form {
+        margin-top: 50px;
+      }
+    }
+  }
+  .why-us-item-container {
+    flex-direction: row;
+  }
+  .ad-container {
+    justify-content: space-around;
+  }
+  .subscriptions {
+    .products-container {
+      padding: 20px;
+    }
+    .card {
+      width: 250px;
+    }
+  }
+  .checkout-container {
+    .container-payments {
+      width: 100%;
+    }
+  }
+  .container-questions {
+    width: 480px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .navbar-nav {
+    margin-left: 100px;
+  }
+  .landing-page {
+    min-height: 400px;
+    h4 {
+      margin-left: 20px;
+    }
+    .container {
+      img {
+        width: 256px;
+      }
+      form {
+        margin-left: 50px;
+        margin-top: 140px;
+      }
+    }
+  }
+  .subscription-item {
+    width: 250px;
+    height: 500px;
+  }
+  .why-us-item {
+    width: 300px;
+  }
+  .advertisement {
+    .ad-container {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-inline: 50px;
+      ul {
+        margin-right: 100px;
+      }
+    }
+  }
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .subscriptions {
+    .products-container {
+      padding: 20px;
+    }
+    .card {
+      width: 250px;
+    }
+  }
+  .container-payments {
+    width: 350px;
+  }
+  .container-questions {
+    width: 800px;
+  }
+  .feedback {
+    form {
+      .input-email {
+        width: 300px;
+      }
+      .input-textarea {
+        width: 600px;
+      }
+      button {
+        width: 150px;
+        place-self: end;
+      }
+    }
+  }
+}

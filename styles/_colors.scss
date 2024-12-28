@@ -1,0 +1,19 @@
+/*Custom Colors*/
+$NeonPink: rgb(192, 0, 236);
+$NeonBlue: rgb(0, 170, 255);
+$DarkPurple: rgb(95, 0, 95);
+$LightPurple: rgb(113, 28, 122);
+$CoalBlack: rgb(24, 24, 24);
+$Gradient_Right_BlueNavyPurple: linear-gradient(to right, blue, navy, purple);
+$Gradient_Down_BluePurple: linear-gradient(to bottom, blue, $LightPurple);
+$Gradient_Down_NavyDark: linear-gradient(to bottom, navy, black);
+$Gradient_Down_PurpleDarkPurple: linear-gradient(
+  to bottom,
+  rgb(104, 23, 197),
+  rgb(53, 12, 96)
+);
+$Gradient_Down_PurplePink: linear-gradient(
+  to bottom,
+  rgb(104, 23, 197),
+  rgb(174, 12, 206)
+);

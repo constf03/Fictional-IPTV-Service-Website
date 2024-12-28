@@ -1,0 +1,474 @@
+/*Custom Colors*/
+.button-blue, .button-purple {
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 7px 0.2px rgba(0, 0, 0, 0.763);
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-purple {
+  background-color: purple;
+  color: white;
+}
+
+.button-purple:hover {
+  background-color: rgb(95, 0, 95);
+}
+
+.button-blue {
+  background-color: blue;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: darkblue;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1,
+h2,
+a {
+  font-family: "Rubik", serif;
+}
+
+p,
+span,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  padding: 15px;
+  background: linear-gradient(to right, blue, navy, purple);
+  box-shadow: 0px 0px 5px 0.5px black;
+}
+
+.landing-page {
+  background-image: url("../images/city-5848267_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 40px;
+  padding-bottom: 120px;
+  color: white;
+}
+.landing-page h1 {
+  color: rgb(192, 0, 236);
+  font-weight: 400;
+}
+.landing-page .button-purple {
+  width: 150px;
+  padding: 12px;
+}
+.landing-page .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.landing-page .container img {
+  max-width: 100%;
+  margin: 20px;
+}
+.landing-page h1,
+.landing-page h4,
+.landing-page .container,
+.landing-page button {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.subscriptions-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, blue, rgb(113, 28, 122));
+  padding: 20px;
+  padding-bottom: 100px;
+  color: white;
+}
+.subscriptions-home h2 {
+  font-weight: 500;
+}
+.subscriptions-home .subscriptions-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.subscriptions-home .subscriptions-container .subscription-item {
+  background: linear-gradient(to bottom, navy, black);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 0.5px rgba(0, 0, 0, 0.502);
+}
+.subscriptions-home .subscriptions-container .subscription-item .button-purple {
+  width: 100px;
+}
+.subscriptions-home .subscriptions-container .subscription-item ul {
+  margin-top: 20px;
+  margin-left: -20px;
+  list-style: none;
+}
+.subscriptions-home .subscriptions-container .subscription-item ul i {
+  color: rgb(192, 0, 236);
+}
+
+.price-tag {
+  font-size: 46px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(0, 170, 255);
+}
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: linear-gradient(to bottom, rgb(104, 23, 197), rgb(174, 12, 206));
+  color: white;
+}
+.subscriptions .container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscriptions .products-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.subscriptions .products-container button {
+  width: 120px;
+}
+.subscriptions .products-container .card {
+  background: linear-gradient(to bottom, blue, darkblue);
+  box-shadow: 0px 0px 10px 1px black;
+  color: white;
+}
+.subscriptions .products-container .card-price-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.why-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(104, 23, 197), rgb(53, 12, 96));
+  padding: 20px;
+  color: white;
+  padding-bottom: 100px;
+}
+.why-us h2 {
+  font-weight: 500;
+  text-align: center;
+}
+.why-us .why-us-item-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.advertisement {
+  background-image: url("../images/streaming-9009377_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-bottom: 100px;
+  color: white;
+}
+.advertisement h1 {
+  font-weight: 400;
+}
+.advertisement ul {
+  font-size: x-large;
+  list-style: none;
+}
+.advertisement i {
+  color: rgb(192, 0, 236);
+}
+.advertisement .ad-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.advertisement button {
+  width: 160px;
+  height: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(24, 24, 24);
+  color: gray;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul i {
+  font-size: xx-large;
+}
+
+.checkout {
+  padding: 20px;
+  padding-bottom: 50px;
+  color: white;
+  background: linear-gradient(to bottom, rgb(104, 23, 197), rgb(174, 12, 206));
+}
+.checkout .checkout-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+.checkout .checkout-container .checkout-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.checkout .checkout-container .checkout-details .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout .checkout-container .checkout-details .container button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: larger;
+}
+.checkout .checkout-container .checkout-details .container .container-plan {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.checkout .checkout-container .checkout-details .container .container-plan .price-tag {
+  font-weight: bold;
+  color: navy;
+}
+.checkout .checkout-container .checkout-details .container .container-plan .plan-tag {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: larger;
+}
+.checkout .checkout-container .checkout-details .container-payments {
+  padding: 20px;
+  margin-top: 40px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
+.checkout .checkout-container .product-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout .checkout-container .product-banner .product-tag {
+  font-size: xx-large;
+}
+.checkout .checkout-container .product-banner .price-tag {
+  font-weight: bold;
+}
+
+.faq {
+  padding: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to bottom, navy, black);
+}
+.faq h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.faq .container-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq .container-questions .question-item {
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgb(95, 0, 95);
+  width: 100%;
+  text-decoration: none;
+  color: rgb(0, 170, 255);
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  padding-bottom: 100px;
+  background: linear-gradient(to bottom, rgb(104, 23, 197), rgb(53, 12, 96));
+}
+.feedback h2 {
+  font-weight: 500;
+}
+.feedback .feedback-header {
+  text-align: center;
+}
+.feedback form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  .landing-page .container img {
+    width: 128px;
+  }
+  .landing-page .container form {
+    margin-top: 50px;
+  }
+  .subscriptions-home .subscriptions-container {
+    flex-direction: column;
+  }
+  .subscriptions-home .subscription-item {
+    width: 300px;
+    height: 500px;
+  }
+  .why-us-item-container {
+    flex-direction: column;
+  }
+  .ad-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ad-container button {
+    align-self: start;
+  }
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkout-container .container-payments {
+    width: 100%;
+  }
+  .container-questions {
+    width: 400px;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  .landing-page .container img {
+    width: 200px;
+  }
+  .landing-page .container form {
+    margin-top: 50px;
+  }
+  .why-us-item-container {
+    flex-direction: row;
+  }
+  .ad-container {
+    justify-content: space-around;
+  }
+  .subscriptions .products-container {
+    padding: 20px;
+  }
+  .subscriptions .card {
+    width: 250px;
+  }
+  .checkout-container .container-payments {
+    width: 100%;
+  }
+  .container-questions {
+    width: 480px;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .navbar-nav {
+    margin-left: 100px;
+  }
+  .landing-page {
+    min-height: 400px;
+  }
+  .landing-page h4 {
+    margin-left: 20px;
+  }
+  .landing-page .container img {
+    width: 256px;
+  }
+  .landing-page .container form {
+    margin-left: 50px;
+    margin-top: 140px;
+  }
+  .subscription-item {
+    width: 250px;
+    height: 500px;
+  }
+  .why-us-item {
+    width: 300px;
+  }
+  .advertisement .ad-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-inline: 50px;
+  }
+  .advertisement .ad-container ul {
+    margin-right: 100px;
+  }
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .subscriptions .products-container {
+    padding: 20px;
+  }
+  .subscriptions .card {
+    width: 250px;
+  }
+  .container-payments {
+    width: 350px;
+  }
+  .container-questions {
+    width: 800px;
+  }
+  .feedback form .input-email {
+    width: 300px;
+  }
+  .feedback form .input-textarea {
+    width: 600px;
+  }
+  .feedback form button {
+    width: 150px;
+    place-self: end;
+  }
+}/*# sourceMappingURL=main.css.map */

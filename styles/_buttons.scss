@@ -1,0 +1,33 @@
+@use "colors";
+@use "fonts";
+
+%button-generic {
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 7px 0.2px rgba(0, 0, 0, 0.763);
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: fonts.$Roboto;
+}
+
+.button-purple {
+  @extend %button-generic;
+  background-color: purple;
+  color: white;
+}
+
+.button-purple:hover {
+  background-color: colors.$DarkPurple;
+}
+
+.button-blue {
+  @extend %button-generic;
+  background-color: blue;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: darkblue;
+}
